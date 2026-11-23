@@ -1,6 +1,7 @@
 // One-star review of something essential: gravity.
-// Writes a single-line deadpan one-star review (111 characters) to
-// /output/entry.txt. Deterministic: no input, no network, no randomness.
+// Writes a single-line deadpan one-star review (111 characters, under the
+// 160-character cap) to /output/entry.txt. Deterministic: no input, no
+// network, no randomness.
 import { mkdirSync, writeFileSync } from "node:fs";
 
 const REVIEW =
